@@ -1,13 +1,27 @@
 #!/usr/bin/env php
+
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+
+// the #!/usr/bin/env php line above this makes sure that all this is running under the PHP
+
 //source: https://code.tutsplus.com/tutorials/how-to-create-custom-cli-commands-using-the-symfony-console-component--cms-31274
 //command line command example: php console hello-world Andor
- 
+
+require_once __DIR__ . '/vendor/autoload.php';
+/*
+Registering a new command, in two steps
+1. use Console\App\Commands\HelloworldCommand;
+2. $app->add(new HelloworldCommand());
+*/
+
+
 use Symfony\Component\Console\Application;
 use Console\App\Commands\HelloworldCommand;
-
+use Console\App\Commands\RandomTextCommand;
+use Console\App\Commands\HelloCommand;
 
 $app = new Application();
 $app->add(new HelloworldCommand());
+$app->add(new RandomTextCommand());
+$app->add(new HelloCommand());
 $app->run();

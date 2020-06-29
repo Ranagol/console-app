@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Console\\App\\Commands\\HelloworldCommand' => $baseDir . '/src/App/Commands/HelloworldCommand.php',
+    'Console\\App\\Commands\\RandomTextCommand' => $baseDir . '/src/App/Commands/RandomTextCommand.php',
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     'Psr\\Container\\ContainerExceptionInterface' => $vendorDir . '/psr/container/src/ContainerExceptionInterface.php',

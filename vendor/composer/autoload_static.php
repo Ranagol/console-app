@@ -87,6 +87,8 @@ class ComposerStaticInitfe00d07ff3965a691a753b9d12261234
     );
 
     public static $classMap = array (
+        'Console\\App\\Commands\\HelloworldCommand' => __DIR__ . '/../..' . '/src/App/Commands/HelloworldCommand.php',
+        'Console\\App\\Commands\\RandomTextCommand' => __DIR__ . '/../..' . '/src/App/Commands/RandomTextCommand.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
