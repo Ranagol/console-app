@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+//source: https://code.tutsplus.com/tutorials/how-to-create-custom-cli-commands-using-the-symfony-console-component--cms-31274
+//command line command example: php console hello-world Andor
+ 
+use Symfony\Component\Console\Application;
+use Console\App\Commands\HelloworldCommand;
+
+
+$app = new Application();
+$app->add(new HelloworldCommand());
+$app->run();
